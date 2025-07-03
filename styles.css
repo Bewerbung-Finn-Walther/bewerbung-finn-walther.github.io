@@ -1,14 +1,16 @@
 html{
   font-family: Arial;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 body{
-  /* background-image: url('../web images/bewerbung\ hintergrund\ fliped.jpg'); */
+  background-image: url('images/bewerbung\ hintergrund5\ mirrored\ gradient2.jpg');
   background-repeat: no-repeat;
-  background-position: right;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  background-position: center;
+  background-size: cover;
+
   height: 100%;
-  width: 100;
+  
 
 }
 
@@ -44,22 +46,24 @@ nav ul li {
   margin: 0px 20px 0px 0px;
 }
 
-h1,h2,section.anschrift,section.kontakt{
+section.anschrift,section.kontakt{
   font-size: 1.5vw;
 }
 
+h1,h2{
+  color: rgb(66, 154, 196);
+  text-shadow: rgb(255, 255, 255) 0px 0px 3px;
+  text-align: center;
+}
+
 h1{
-color: rgb(66, 154, 196);
 margin: 20px auto;
-text-align: center;
 font-size: 400%;
 }
 
 h2{
-color: rgb(66, 154, 196);
 margin: 0 auto;
 margin-bottom: 50px;
-text-align: center;
 font-size: 150%;
   
 }
