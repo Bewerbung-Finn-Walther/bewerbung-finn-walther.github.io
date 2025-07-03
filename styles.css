@@ -61,6 +61,7 @@ margin: 0 auto;
 margin-bottom: 50px;
 text-align: center;
 font-size: 150%;
+  
 }
 
 ul.body.home{
@@ -237,9 +238,14 @@ div.lebenslauf.body{
 }
 
 .rechts{
-  margin: 0 auto;
+  margin: 0 auto 0 0;
   width: 550px;
 }
+
+@media (max-width: 1116px){
+  .rechts{
+    margin-left: auto;
+}}
 
 .links li, .rechts li{
   margin-top: 30px;
