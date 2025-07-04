@@ -10,6 +10,7 @@ body{
   background-size: cover;
   height: 100%;
   font-size: 16px;
+  max-width: 1920px;
 }
 
 header{
