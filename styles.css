@@ -8,12 +8,16 @@ body{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
   height: 100%;
-  
-
+  font-size: 16px;
 }
 
+header{
+  background-color: rgba(126, 164, 182, 0.6);
+  padding: 10px;
+  margin: -10px;
+
+}
 
 
 ul {
@@ -27,8 +31,6 @@ a{
   color: inherit;
 }
 
-
-
 a:hover{
   text-decoration: underline;
 }
@@ -41,9 +43,32 @@ section.home.inhalt a button:active{
   background-color: rgb(107, 168, 238);
 }
 
-nav ul li {
+nav ul li{
   display: inline-block;
   margin: 0px 20px 0px 0px;
+}
+
+
+
+nav ul li button{
+  background-color: rgba(0, 0, 0, 0);
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 25px;
+  margin-right: -10px;
+  border-style: none;
+}
+
+nav ul li button:active{
+  background-color: rgba(243, 251, 255, 0.8);
+}
+
+nav ul li button:hover{
+  background-color: rgba(243, 251, 255, 0.5);
+}
+
+nav ul li button.current{
+  background-color: rgb(243, 251, 255);
 }
 
 section.anschrift,section.kontakt{
@@ -52,7 +77,7 @@ section.anschrift,section.kontakt{
 
 h1,h2{
   color: rgb(66, 154, 196);
-  text-shadow: rgb(255, 255, 255) 0px 0px 3px;
+  text-shadow: rgb(157, 222, 252) 0px 0px 3px;
   text-align: center;
 }
 
@@ -89,9 +114,9 @@ ul.body.home{
 
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .anschrift.home, .kontakt.home{
-    font-size: 15px;
+    font-size: 18px;
 }}
 
 
@@ -129,7 +154,6 @@ section.inhalt button{
 
 }
 section.inhalt nav{
-  
   display: flex;
   flex-wrap: wrap;
   width: 42%;
@@ -138,8 +162,13 @@ section.inhalt nav{
   margin-top: -5%;
   justify-content: center;
   /* background-color: blue; */
-  
 }
+@media (max-width: 1200px){
+  section.inhalt nav{
+    margin-top: 0;
+  }
+}
+
 
 section.inhalt nav li button{
   background-color: rgba(43, 103, 182, 0.822);
@@ -153,17 +182,20 @@ section.inhalt nav li button{
   border-width: 3px;
 }
 
-.home .nachweise button{
-  margin: 0 11px;
-}
 
 @media (min-width: 1200px) {
   section.inhalt nav li button{
     font-size: 2.7vw;
 }}
 
+@media (max-width: 1200px) {
+  section.inhalt nav li button{
+    margin: 0 100px;
+    padding: 2.8%;
+}}
+
 section.inhalt nav li{
-  margin: 5% 40px;
+  margin: 20px 40px;
   margin-right: 20px;
 }
 @media (min-width: 1200px) {
@@ -273,15 +305,17 @@ margin-top: 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  
 }
 
 .bilder figure{
-  padding: 20px;
+  padding: 10px 20px;
   text-align: center;
   margin: auto;
-  width: calc(20% + 100px);
+  width: calc(18% + 100px);
 
 }
+
 
 .bilder img{
   width: 100%;
@@ -289,8 +323,28 @@ margin-top: 20px;
   border-color: rgb(0, 0, 0);
   border-style: solid;
   border-width: 1px;
+  opacity: 0.8;
 }
 
+.bilder figure a button{
+  border-style: none;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.bilder img:hover{
+  opacity: 1;
+}
+
+.bilder figcaption{
+  margin-top: 1%;
+  font-size: 1.4vw;
+}
+
+@media (max-width: 1200px){
+  .bilder figcaption{
+    font-size: 17px;
+  }}
 
 
 /* li.überschrift{
