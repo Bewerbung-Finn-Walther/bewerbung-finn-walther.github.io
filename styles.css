@@ -257,7 +257,7 @@ section.anschreiben.text li{
 
   
 
-div.lebenslauf.body{
+div.lebenslauf.ul{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
