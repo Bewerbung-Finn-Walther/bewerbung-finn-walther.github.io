@@ -143,7 +143,7 @@ section.inhalt.home{
 .bewerbungsfoto{
   width: 25%;
   margin: auto 2% auto auto;
-  border-radius: 10px;
+  
 }
 
 @media (max-width: 1200px){
@@ -153,6 +153,7 @@ section.inhalt.home{
 
 .bewerbungsfoto img{
   width: 100%;
+  border-radius: 10px;
 }
 
 section.inhalt button{
